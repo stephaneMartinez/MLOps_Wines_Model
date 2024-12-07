@@ -107,3 +107,4 @@ Source-Age: 0
 2024-07-10 13:00:48,577 - custom_logger - INFO - yaml file: src\models_module_def\params.yaml loaded successfully
 2024-07-10 13:00:48,577 - custom_logger - INFO - yaml file: src\data_module_def\schema.yaml loaded successfully
 2024-07-10 13:00:48,577 - custom_logger - INFO - created directory at: models
+2024-12-07 16:44:28,455 - custom_logger - INFO - Custom logger module initialized.

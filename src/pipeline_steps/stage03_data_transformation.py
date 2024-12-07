@@ -1,13 +1,12 @@
 import sys
 from pathlib import Path
+from src.config_manager import ConfigurationManager
+from src.data_module_def.data_transformation import DataTransformation
+from custom_logger  import logger
 
 # Add parent directory to path
 parent_folder = str(Path(__file__).parent.parent.parent)
 sys.path.append(parent_folder)
-
-from src.config_manager import ConfigurationManager
-from src.data_module_def.data_transformation import DataTransformation
-from custom_logger  import logger
 
 STAGE_NAME = "Data Transformation stage"
 
@@ -20,6 +19,13 @@ class DataTransformationTrainingPipeline:
             with open(Path("data/status.txt"), 'r') as f:
                 status = f.read().split(" ")[-1]
             
+            if status == "True":
+                config = ConfigurationManager()
+                data_transformation_config = config.get_data_transformation_config()
+                data_transformation = DataTransformation(config = data_transformation_config)
+                data_transformation.train_test_splitting()
+            else:
+                raise Exception("Your data schema is not valid")
         
         except Exception as e:
             print(e)
