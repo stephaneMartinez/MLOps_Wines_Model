@@ -108,3 +108,259 @@ Source-Age: 0
 2024-07-10 13:00:48,577 - custom_logger - INFO - yaml file: src\data_module_def\schema.yaml loaded successfully
 2024-07-10 13:00:48,577 - custom_logger - INFO - created directory at: models
 2024-12-07 16:44:28,455 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 13:51:32,752 - __main__ - INFO - Custom logger module initialized.
+2024-12-08 14:26:06,194 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:26:07,147 - custom_logger - INFO - Parent folder: /Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model
+2024-12-08 14:26:07,147 - custom_logger - INFO - >>>>> stage Data Ingestion stage started <<<<<
+2024-12-08 14:26:07,150 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:26:07,151 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:26:07,153 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:26:07,153 - custom_logger - INFO - created directory at: data/raw
+2024-12-08 14:26:07,911 - custom_logger - INFO - data/raw/data.zip download! With following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 63A2:D3D70:147E068:156B906:67559E6E
+Accept-Ranges: bytes
+Date: Sun, 08 Dec 2024 13:26:07 GMT
+Via: 1.1 varnish
+X-Served-By: cache-cdg-lfpb1150023-CDG
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1733664368.760168,VS0,VE158
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: fdfbd712d92dce4598e9f0652b46606b3ee648c9
+Expires: Sun, 08 Dec 2024 13:31:07 GMT
+Source-Age: 0
+
+
+2024-12-08 14:26:07,929 - custom_logger - INFO - >>>>> stage Data Ingestion stage completed <<<<<
+
+x=======x
+2024-12-08 14:26:08,288 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:26:36,308 - custom_logger - INFO - >>>>> stage Data Validation stage started <<<<<
+2024-12-08 14:26:36,311 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:26:36,312 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:26:36,313 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:26:36,314 - custom_logger - INFO - created directory at: data
+2024-12-08 14:26:36,323 - custom_logger - INFO - >>>>> stage Data Validation stage completed <<<<<
+
+x=======x
+2024-12-08 14:26:36,741 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:27:43,686 - custom_logger - INFO - >>>>> stage Data Transformation stage started <<<<<
+2024-12-08 14:27:43,692 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:27:43,694 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:27:43,696 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:27:43,697 - custom_logger - INFO - created directory at: data/processed
+2024-12-08 14:27:43,745 - custom_logger - INFO - Splitted data into training and test sets
+2024-12-08 14:27:43,746 - custom_logger - INFO - X_train shape: (1279, 11), y_train shape: (1279,)
+2024-12-08 14:27:43,746 - custom_logger - INFO - X_test shape: (320, 11), y_test shape: (320,)
+2024-12-08 14:27:43,746 - custom_logger - INFO - >>>>> stage Data Transformation stage completed <<<<<
+
+x=======x
+2024-12-08 14:38:52,280 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:39:03,527 - custom_logger - INFO - >>>>> stage Model trainer stage started <<<<<
+2024-12-08 14:39:03,531 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:39:03,533 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:39:03,534 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:39:03,535 - custom_logger - INFO - created directory at: models
+2024-12-08 14:39:03,564 - custom_logger - INFO - >>>>> stage Model trainer stage completed <<<<< 
+
+ x========x
+2024-12-08 14:39:04,026 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:39:21,169 - httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 200 OK"
+2024-12-08 14:39:21,466 - httpx - INFO - HTTP Request: POST https://dagshub.com/login/oauth/access_token "HTTP/1.1 200 OK"
+2024-12-08 14:39:21,793 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 14:39:21,800 - dagshub - INFO - Accessing as stephaneMartinez
+2024-12-08 14:39:22,108 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/StephaneMartinez/MLOps_Wines_Model "HTTP/1.1 200 OK"
+2024-12-08 14:39:22,325 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 14:39:22,326 - dagshub - INFO - Initialized MLflow to track repo "StephaneMartinez/MLOps_Wines_Model"
+2024-12-08 14:39:22,327 - dagshub - INFO - Repository StephaneMartinez/MLOps_Wines_Model initialized!
+2024-12-08 14:39:22,327 - custom_logger - INFO - >>>>> stage Model evaluation stage started <<<<<
+2024-12-08 14:39:22,333 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:39:22,334 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:39:22,336 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:39:22,336 - custom_logger - INFO - created directory at: metrics
+2024-12-08 14:39:23,183 - custom_logger - INFO - json file saved at: metrics/metrics.json
+2024-12-08 14:39:37,493 - custom_logger - ERROR - API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 404 != 200. Response body: '404 page not found
+'
+Traceback (most recent call last):
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model/src/pipeline_steps/stage05_model_evaluation.py", line 32, in <module>
+    obj.main()
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model/src/pipeline_steps/stage05_model_evaluation.py", line 26, in main
+    model_evaluation.log_into_mlflow()
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model/src/models_module_def/model_evaluation.py", line 56, in log_into_mlflow
+    mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/sklearn/__init__.py", line 424, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/models/model.py", line 562, in log
+    mlflow.register_model(
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/_model_registry/fluent.py", line 77, in register_model
+    raise e
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/_model_registry/fluent.py", line 68, in register_model
+    create_model_response = client.create_registered_model(name)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/client.py", line 1743, in create_registered_model
+    return self._get_registry_client().create_registered_model(name, tags, description)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/_model_registry/client.py", line 63, in create_registered_model
+    return self.store.create_registered_model(name, tags, description)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/store/model_registry/rest_store.py", line 75, in create_registered_model
+    response_proto = self._call_endpoint(CreateRegisteredModel, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/store/model_registry/base_rest_store.py", line 42, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 404 != 200. Response body: '404 page not found
+'
+2024-12-08 14:45:54,694 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:46:00,902 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 14:46:00,912 - dagshub - INFO - Accessing as stephaneMartinez
+2024-12-08 14:46:01,282 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/StephaneMartinez/MLOps_Wines_Model "HTTP/1.1 200 OK"
+2024-12-08 14:46:01,479 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 14:46:01,482 - dagshub - INFO - Initialized MLflow to track repo "StephaneMartinez/MLOps_Wines_Model"
+2024-12-08 14:46:01,483 - dagshub - INFO - Repository StephaneMartinez/MLOps_Wines_Model initialized!
+2024-12-08 14:46:01,483 - custom_logger - INFO - >>>>> stage Model evaluation stage started <<<<<
+2024-12-08 14:46:01,489 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:46:01,491 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:46:01,497 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:46:01,497 - custom_logger - INFO - created directory at: metrics
+2024-12-08 14:46:02,539 - custom_logger - INFO - json file saved at: metrics/metrics.json
+2024-12-08 14:46:12,819 - custom_logger - ERROR - API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 404 != 200. Response body: '404 page not found
+'
+Traceback (most recent call last):
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model/src/pipeline_steps/stage05_model_evaluation.py", line 28, in <module>
+    obj.main()
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model/src/pipeline_steps/stage05_model_evaluation.py", line 22, in main
+    model_evaluation.log_into_mlflow()
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/MLOps_Wines_Model/src/models_module_def/model_evaluation.py", line 56, in log_into_mlflow
+    mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/sklearn/__init__.py", line 424, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/models/model.py", line 562, in log
+    mlflow.register_model(
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/_model_registry/fluent.py", line 77, in register_model
+    raise e
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/_model_registry/fluent.py", line 68, in register_model
+    create_model_response = client.create_registered_model(name)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/client.py", line 1743, in create_registered_model
+    return self._get_registry_client().create_registered_model(name, tags, description)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/tracking/_model_registry/client.py", line 63, in create_registered_model
+    return self.store.create_registered_model(name, tags, description)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/store/model_registry/rest_store.py", line 75, in create_registered_model
+    response_proto = self._call_endpoint(CreateRegisteredModel, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/store/model_registry/base_rest_store.py", line 42, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/stephane/Documents/Professionnel/Formation/Certificats/Datascientest/1 - Cours/MLOps/02 - MasterClass1 - OverViewMLOPS/venv/lib/python3.11/site-packages/mlflow/utils/rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/registered-models/create failed with error code 404 != 200. Response body: '404 page not found
+'
+2024-12-08 14:49:16,278 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 14:49:52,863 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 14:49:52,871 - dagshub - INFO - Accessing as stephaneMartinez
+2024-12-08 14:49:53,086 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/your_username/your_repo "HTTP/1.1 404 Not Found"
+2024-12-08 14:49:53,092 - dagshub - INFO - Repository your_repo doesn't exist, creating it under current user.
+2024-12-08 14:49:53,760 - httpx - INFO - HTTP Request: POST https://dagshub.com/api/v1/user/repos "HTTP/1.1 201 Created"
+2024-12-08 14:49:53,966 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 14:49:53,973 - dagshub - INFO - Initialized MLflow to track repo "your_username/your_repo"
+2024-12-08 14:49:53,976 - dagshub - INFO - Repository your_username/your_repo initialized!
+2024-12-08 14:50:49,701 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/StephaneMartinez/MLOps_Wines_Model "HTTP/1.1 200 OK"
+2024-12-08 14:50:49,710 - dagshub - INFO - Initialized MLflow to track repo "StephaneMartinez/MLOps_Wines_Model"
+2024-12-08 14:50:49,712 - dagshub - INFO - Repository StephaneMartinez/MLOps_Wines_Model initialized!
+2024-12-08 14:51:08,781 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/StephaneMartinez/MLOps_Wines_Model "HTTP/1.1 200 OK"
+2024-12-08 14:51:08,789 - dagshub - INFO - Initialized MLflow to track repo "StephaneMartinez/MLOps_Wines_Model"
+2024-12-08 14:51:08,791 - dagshub - INFO - Repository StephaneMartinez/MLOps_Wines_Model initialized!
+2024-12-08 14:51:13,066 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:51:13,075 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:51:13,079 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:51:13,080 - custom_logger - INFO - created directory at: data/raw
+2024-12-08 14:51:13,081 - custom_logger - INFO - File already exists.
+2024-12-08 14:51:15,187 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:51:15,191 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:51:15,194 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:51:15,195 - custom_logger - INFO - created directory at: data
+2024-12-08 14:51:18,663 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:51:18,666 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:51:18,668 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:51:18,679 - custom_logger - INFO - created directory at: data/processed
+2024-12-08 14:51:18,772 - custom_logger - INFO - Splitted data into training and test sets
+2024-12-08 14:51:18,772 - custom_logger - INFO - X_train shape: (1279, 11), y_train shape: (1279,)
+2024-12-08 14:51:18,772 - custom_logger - INFO - X_test shape: (320, 11), y_test shape: (320,)
+2024-12-08 14:51:23,410 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:51:23,426 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:51:23,434 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:51:23,434 - custom_logger - INFO - created directory at: models
+2024-12-08 14:51:25,981 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 14:51:25,983 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 14:51:25,989 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 14:51:25,991 - custom_logger - INFO - created directory at: metrics
+2024-12-08 14:51:26,952 - custom_logger - INFO - json file saved at: metrics/metrics.json
+2024-12-08 16:39:37,537 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/StephaneMartinez/MLOps_Wines_Model "HTTP/1.1 200 OK"
+2024-12-08 16:39:37,547 - dagshub - INFO - Initialized MLflow to track repo "StephaneMartinez/MLOps_Wines_Model"
+2024-12-08 16:39:37,548 - dagshub - INFO - Repository StephaneMartinez/MLOps_Wines_Model initialized!
+2024-12-08 16:39:43,188 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 16:39:43,190 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 16:39:43,196 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 16:39:43,199 - custom_logger - INFO - created directory at: data/raw
+2024-12-08 16:39:43,199 - custom_logger - INFO - File already exists.
+2024-12-08 16:39:45,584 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 16:39:45,585 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 16:39:45,589 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 16:39:45,590 - custom_logger - INFO - created directory at: data
+2024-12-08 16:39:49,628 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 16:39:49,654 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 16:39:49,660 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 16:39:49,661 - custom_logger - INFO - created directory at: data/processed
+2024-12-08 16:39:49,737 - custom_logger - INFO - Splitted data into training and test sets
+2024-12-08 16:39:49,737 - custom_logger - INFO - X_train shape: (1279, 11), y_train shape: (1279,)
+2024-12-08 16:39:49,737 - custom_logger - INFO - X_test shape: (320, 11), y_test shape: (320,)
+2024-12-08 16:39:51,851 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 16:39:51,853 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 16:39:51,857 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 16:39:51,861 - custom_logger - INFO - created directory at: models
+2024-12-08 16:39:56,078 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 16:39:56,086 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 16:39:56,111 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 16:39:56,113 - custom_logger - INFO - created directory at: metrics
+2024-12-08 16:39:56,384 - custom_logger - INFO - json file saved at: metrics/metrics.json
+2024-12-08 16:44:32,882 - custom_logger - INFO - Custom logger module initialized.
+2024-12-08 16:44:39,928 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 16:44:39,940 - dagshub - INFO - Accessing as stephaneMartinez
+2024-12-08 16:44:40,300 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/StephaneMartinez/MLOps_Wines_Model "HTTP/1.1 200 OK"
+2024-12-08 16:44:40,492 - httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+2024-12-08 16:44:40,495 - dagshub - INFO - Initialized MLflow to track repo "StephaneMartinez/MLOps_Wines_Model"
+2024-12-08 16:44:40,496 - dagshub - INFO - Repository StephaneMartinez/MLOps_Wines_Model initialized!
+2024-12-08 16:44:40,496 - custom_logger - INFO - >>>>> stage Model evaluation stage started <<<<<
+2024-12-08 16:44:40,502 - custom_logger - INFO - yaml file: src/config.yaml loaded successfully
+2024-12-08 16:44:40,504 - custom_logger - INFO - yaml file: src/models_module_def/params.yaml loaded successfully
+2024-12-08 16:44:40,507 - custom_logger - INFO - yaml file: src/data_module_def/schema.yaml loaded successfully
+2024-12-08 16:44:40,510 - custom_logger - INFO - created directory at: metrics
+2024-12-08 16:44:41,539 - custom_logger - INFO - json file saved at: metrics/metrics.json
+2024-12-08 16:44:54,800 - custom_logger - INFO - >>>>> stage Model evaluation stage completed <<<<< 
+
+ x========x

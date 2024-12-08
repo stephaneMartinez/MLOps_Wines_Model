@@ -181,7 +181,7 @@ Use dvc to connect the different steps of your pipeline.
 For example, the command for addind the first step of the pipeline is: 
 
 ```bash
-dvc stage add -n data_ingestion -d wine_quality/src/pipeline_steps/stage01_data_ingestion.py -d wine_quality/src/config.yaml -o wine_quality/data/raw/winequality-red.csv python wine_quality/src/pipeline_steps/stage01_data_ingestion.py
+dvc stage add -n data_ingestion -d src/pipeline_steps/stage01_data_ingestion.py -d src/config.yaml -o data/raw/winequality-red.csv python src/pipeline_steps/stage01_data_ingestion.py
 ```
 Add the following steps for the data transformation, data validation, model training and model evaluation.
 

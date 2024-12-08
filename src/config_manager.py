@@ -91,7 +91,7 @@ class ConfigurationManager:
                 model_path=config.model_path,
                 metric_file_name=config.metric_file_name,
                 all_params=params,
-                mlflow_uri="https://dagshub.com/stephaneMartinez/MLOps_Wines_Model.s3", # make sure to update this information
+                mlflow_uri="https://dagshub.com/stephaneMartinez/MLOps_Wines_Model.mlflow", # make sure to update this information
           )
 
           return model_evaluation_config

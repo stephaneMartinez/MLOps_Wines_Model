@@ -170,17 +170,81 @@ Pour chaque script, vous devez compléter les classes avec deux méthodes : une 
 ## Step 5: Use DVC to connect the different stages of your pipeline 🦉
 Commencez par configurer DagsHub en tant que stockage distant via DVC.
 
+Pour initialiser le repo DVC :
+``bash
+dvc init
+``
+Initialiser le repo sous S3 :
 ```bash
 dvc remote add origin s3://dvc
-dvc remote modify origin endpointurl https://dagshub.com/your_username/your_repo.s3 
+dvc remote modify origin endpointurl https://dagshub.com/stephaneMartinez/MLOps_Wines_Model.s3
 dvc remote default origin
+```
+
+Initilialiser les credentials (dans dagshub "remote" "Data" > "DVC" > "Setup Credentials")
+```bash
+dvc remote modify origin --local access_key_id ddcdf3d811ab7bb6d3437387618f9956f72a9254
+dvc remote modify origin --local secret_access_key ddcdf3d811ab7bb6d3437387618f9956f72a9254
 ```
 
 Utilisez dvc pour connecter les différentes étapes de votre pipeline.
 
 Par exemple, la commande pour ajouter la première étape du pipeline est la suivante : 
 
-``bash
-dvc stage add -n data_ingestion -d wine_quality/src/pipeline_steps/stage01_data_ingestion.py -d wine_quality/src/config.yaml -o wine_quality/data/raw/winequality-red.csv python wine_quality/src/pipeline_steps/stage01_data_ingestion.py
+
+Pour initiliaser le pipeline :
+```bash
+dvc stage add -n data_ingestion \
+              -d src/config.yaml \
+              -d src/pipeline_steps/stage01_data_ingestion.py \
+              -o data/raw/winequality-red.csv \
+              python src/pipeline_steps/stage01_data_ingestion.py
 ```
-Ajoutez les étapes suivantes pour la transformation des données, la validation des données, l'entraînement du modèle et l'évaluation du modèle.
+
+```bash
+dvc stage add -n data_validation \
+              -d src/config.yaml \
+              -d data/raw/winequality-red.csv \
+              -d  src/pipeline_steps/stage02_data_validation.py \
+              -o data/status.txt \
+              python src/pipeline_steps/stage02_data_validation.py
+```
+
+```bash
+dvc stage add -n data_transformation \
+              -d src/config.yaml \
+              -d data/raw/winequality-red.csv \
+              -d data/status.txt \
+              -d src/pipeline_steps/stage03_data_transformation.py \
+              -o data/processed/X_test.csv \
+              -o data/processed/X_train.csv \
+              -o data/processed/y_test.csv \
+              -o data/processed/y_train.csv \
+              python src/pipeline_steps/stage03_data_transformation.py
+```
+
+```bash
+dvc stage add -n model_trainer \
+              -d src/config.yaml \
+              -d data/processed/X_train.csv \
+              -d data/processed/y_train.csv \
+              -d src/pipeline_steps/stage04_model_trainer.py \
+              python src/pipeline_steps/stage04_model_trainer.py
+```
+
+```bash
+dvc stage add -n model_evaluation \
+              -d src/config.yaml \
+              -d data/processed/X_test.csv \
+              -d data/processed/y_test.csv \
+              -d models/model.joblib \
+              -d src/pipeline_steps/stage05_model_evaluation.py \
+              -o metrics/metrics.json \
+              python src/pipeline_steps/stage05_model_evaluation.py
+```
+
+You can run the pipeline through the command `dvc repro`.
+
+Congratulations! 🎉 Now that you have a structured and well-defined MLOps project you're ready for the next step which is the creation of the API.
+
+Each step is modularized, making it easy to maintain, extend, and scale your Machine Learning pipeline. 
